@@ -1,4 +1,8 @@
-* {box-sizing:border-box}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -42,10 +46,10 @@
 /* Caption text */
 .text {
   color: #000000;
-  font-size: 15px;
+  font-size: 30px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 90%;  
   width: 100%;
   text-align: center;
 }

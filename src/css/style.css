@@ -1,10 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+  background: #ffebed;
+}
 header {
   width: 100%;
   height: 5rem;
-  background: #ccc;
+  background: red;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.6s;
 }
 
 .header-nav {
@@ -21,24 +30,125 @@ header {
 }
 
 .header-menu a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
   transition: color 0.3s;
 }
 
 .header-menu a:hover {
-  color: #555;
+  color: #aaa;
 }
 
 /* Imagens do slideshow */
 .imagem-slideshow {
-  width: 100%;
+  display: block;
+  margin: 0 auto;
+  width: 78%;
   height: auto;
   border-radius: 10px;
 }
 
-/* CSS dos Cards*/
-.imgCard{
-  
+@media (max-width: 480px) {
+  .header-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-menu a {
+    font-size: 16px;
+  }
+
+  .slideshow-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .prev, .next {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+}
+footer{
+  height: 4.65rem;
+  background: red;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer-content{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 72%;
+}
+.footer-content p, h3{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*CSS dos Cards*/
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  background-color: transparent;
+}
+
+/*Card individual*/
+.fantasia {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fantasia:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/*Imagem*/
+.imgCard {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/*Textos*/
+.fantasia h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.descricao-fantasia {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+  min-height: 40px;
+}
+
+.preco-fantasia {
+  font-weight: bold;
+  color: #e63946;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
 }

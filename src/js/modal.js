@@ -36,7 +36,7 @@ async function abrirLogin() {
 
     // Exemplo opcional: redirecionar após login
      setTimeout(() => {
-       window.location.href = "src/pages/Tarefas.html";
+       window.location.href = "/src/pages/Tarefas.html";
      }, 2500);
   }
 }

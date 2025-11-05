@@ -14,7 +14,15 @@ body {
     padding: 20px;
     margin: 0;
 }
-
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 25px;
+}
+#tarefas{
+    padding-top: 150px;
+}
 /* Estilo para o título principal */
 h1 {
     color: #000000;
